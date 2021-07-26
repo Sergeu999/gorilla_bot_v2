@@ -7,12 +7,12 @@ console.log('  vk.com/shabolin209')
 console.log('-------------------------------')
 console.log('')
 
-// ВСЕ НАСТРОЙКИ В ФАЙЛЕ /database/settings.json! 
+// ВСЕ НАСТРОЙКИ В ФАЙЛЕ settings.json! 
 
 const { VK } = require('vk-io');
 const vk = new VK();
 const commands = [];
-const clans = require('./database/clans.json');
+const clans = require('./clans.json');
 const request = require('prequest');
 
 const cars = [
@@ -899,8 +899,8 @@ let btc = 6000;
 let smileerror = utils.pick([`😒`, `😯`, `😔`, `🤔`]);
 let smilesuccess = utils.pick([`😯`, `🙂`, `🤑`, `☺`]);
 
-let users = require('./database/users.json');
-let config = require('./database/settings.json');
+let users = require('./users.json');
+let config = require('./settings.json');
 let buttons = [];
 
 setTimeout(async () => {
